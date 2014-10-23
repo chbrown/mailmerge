@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MailMerge</title>
+  <link rel="stylesheet" type="text/css" href="static/site.css" media="all" />
+  <script src="static/lib/lodash.js"></script>
+  <script src="static/lib/angular.js"></script>
+  <script src="static/lib/ngStorage.js"></script>
+  <script src="static/lib/angular-ui-router.js"></script>
+  <script src="static/lib/angular-plugins.js"></script>
+  <script src="static/lib/textarea.js"></script>
+  <script src="static/app.js"></script>
+</head>
+<body ng-app="app">
+  <nav fixedflow activate-current-anchor>
+    <div class="content">
+      <a ui-sref="data">Data</a>
+      <a ui-sref="design">Design</a>
+      <a ui-sref="print">Print</a>
+      <div style="float: right; color: white; font-style: italic">
+        This bar will not be printed.
+      </div>
+    </div>
+  </nav>
+  <div ui-view></div>
+</body>
+</html>

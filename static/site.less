@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@media screen {
+  body {
+    margin: 0;
+  }
+}
+@media print {
+  body {
+    margin: 0;
+  }
+  nav, .fixedflow-placeholder {
+    display: none;
+  }
+
+  @page {
+    margin: .20in;
+    size: portrait;
+  }
+}
+
+table {
+  th {
+    text-align: left;
+  }
+}
+
+textarea {
+  font: 9pt monospace;
+}
+
+span, img, i, b {
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+nav {
+  left: 0;
+  right: 0;
+  padding: 0 5px;
+  font-size: 90%;
+  z-index: 100;
+
+  background-color: #555;
+
+  span, a, button, img, select {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span, a {
+    padding: 2px 6px;
+    margin: 3px 0 0 0;
+  }
+  a {
+    background-color: #BBB;
+    border-radius: 2px 2px 0 0;
+    &:hover, &.current {
+      background-color: #FEFEFE;
+    }
+  }
+}
+
+section {
+  padding: 0 10px;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  page-break-inside: avoid;
+}

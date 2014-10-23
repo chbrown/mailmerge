@@ -1,0 +1,17 @@
+<section>
+  <h2>Data</h2>
+  <p>Enter your csv / tsv</p>
+  <textarea ng-model="$storage.csv" enhance style="min-height: 200px; width: 100%"></textarea>
+
+  <h2>Result</h2>
+  <table>
+    <thead>
+      <th ng-repeat="(column, cell) in data[0]">{{column}}</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="row in data">
+        <td ng-repeat="(column, cell) in data[0]">{{row[column]}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

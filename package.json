@@ -1,0 +1,18 @@
+{
+  "name": "mailmerge",
+  "homepage": "https://github.com/chbrown/mailmerge",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chbrown/mailmerge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chbrown/mailmerge/issues"
+  },
+  "staticDependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "lo-dash": "*",
+    "misc-js": "git://github.com/chbrown/misc-js.git"
+  },
+  "staticPattern": "static/lib/{file}"
+}
